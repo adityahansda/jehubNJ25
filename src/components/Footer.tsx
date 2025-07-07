@@ -1,5 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 import { BookOpen, Mail, Phone, MapPin, Facebook, Twitter, Instagram, Linkedin } from 'lucide-react';
 
 const Footer = () => {
@@ -9,14 +10,15 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center space-x-2">
-              <div className="bg-gradient-to-r from-blue-600 to-purple-600 p-2 rounded-lg">
-                <BookOpen className="h-6 w-6 text-white" />
-              </div>
-              <span className="text-2xl font-bold bg-gradient-to-r from-blue-400 to-purple-400 bg-clip-text text-transparent">
-                JEHUB
-              </span>
-            </Link>
+           <Link href="/" className="flex items-center space-x-2">
+            <Image
+              src="/images/jharkhand_Enginner_s_Hub-white.png"
+              alt="JEHUB Logo"
+              width={120}
+              height={40}
+              className="h-10 w-auto"
+            />
+          </Link>
             <p className="text-gray-400 text-sm">
               Empowering students to learn, share, and grow together. Join our academic community today.
             </p>
