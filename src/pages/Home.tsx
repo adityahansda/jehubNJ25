@@ -99,7 +99,7 @@ const Home = () => {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto text-center">
-          <h1 className="text-8xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight">
             Wellcome to JEHUB !
           </h1>
           <span className="text-4xl block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent mb-6 font-bold">
