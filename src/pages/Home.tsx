@@ -68,8 +68,9 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+
       {/* Hero Section */}
-      <section className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-teal-600 text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
+      {/* <section className="relative bg-gradient-to-br from-blue-600 via-purple-600 to-teal-600 text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden h-[100vh] flex items-center justify-center">
         <div className="absolute inset-0 bg-black/10"></div>
         <div className="relative max-w-7xl mx-auto">
           <div className="text-center">
@@ -98,7 +99,45 @@ const Home = () => {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
+      <section className="relative bg-animated-gradient text-white py-20 px-4 sm:px-6 lg:px-8 overflow-hidden h-[100vh] flex items-center justify-center">
+  {/* Glowing overlay */}
+  <div className="absolute inset-0 bg-black/20 backdrop-blur-sm"></div>
+
+  {/* Floating glowing particles */}
+  <div className="absolute top-0 left-0 w-full h-full pointer-events-none overflow-hidden z-0">
+    <div className="absolute w-72 h-72 bg-pink-400 rounded-full mix-blend-overlay opacity-20 animate-pulse left-[10%] top-[20%] blur-3xl"></div>
+    <div className="absolute w-80 h-80 bg-blue-400 rounded-full mix-blend-overlay opacity-20 animate-pulse right-[15%] top-[30%] blur-3xl animation-delay-2000"></div>
+    <div className="absolute w-96 h-96 bg-teal-400 rounded-full mix-blend-overlay opacity-20 animate-pulse left-[30%] bottom-[10%] blur-3xl animation-delay-4000"></div>
+  </div>
+
+  <div className="relative z-10 max-w-7xl mx-auto text-center">
+    <h1 className="text-8xl sm:text-5xl lg:text-6xl font-bold leading-tight">
+      Wellcome to JEHUB
+    </h1>
+      <span className="text-4xl block bg-gradient-to-r from-yellow-300 to-orange-300 bg-clip-text text-transparent mb-6 font-bold">
+        Learn, Share & Grow
+      </span>
+    <p className="text-xl sm:text-2xl mb-8 text-blue-100 max-w-3xl mx-auto">
+      Join our academic community to exchange notes, request help, and boost your learning journey with thousands of students worldwide.
+    </p>
+    <div className="flex flex-col sm:flex-row gap-4 justify-center">
+      <Link
+        href="/notes-download"
+        className="bg-white text-blue-600 px-8 py-4 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+      >
+        Explore Notes
+      </Link>
+      <Link
+        href="/signup"
+        className="bg-gradient-to-r from-orange-500 to-red-500 text-white px-8 py-4 rounded-lg font-semibold text-lg hover:from-orange-600 hover:to-red-600 transition-all duration-200 shadow-lg hover:shadow-xl transform hover:-translate-y-1"
+      >
+        Join Now
+      </Link>
+    </div>
+  </div>
+</section>
+
 
       {/* Features Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8">
